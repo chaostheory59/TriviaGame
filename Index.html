@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video-Game Triva</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        
+		
+		<div class="jumbotron">
+
+			<h1 class="text-center titlebox">Video-Game Trivia</h1>
+
+			<h2 class="text-center titlebox">Brought to you by Quantum Pheonix</h2>
+
+			<h3 class="text-center titlebox">
+				You will be given several questions to answer. It will test your knowledge on video games from old to new. 
+            </h3>
+			<h3 class="text-center titlebox">
+				You will be timed. If you end up running out of time, you will loose. you will be given 60 seconds to complete the answers.
+            </h3>
+            <h3 class="text-center titlebox">
+				Please click on one answer per question. Some might have more than one correct answer!
+            </h3>
+            
+        </div>
+    </div>
+
+        <div>
+            
+            <h4 class ="text-center">
+                    <button class="text-center btn btn-warning btn-xs theme-button">
+                    <span class="music"></span> Start!</button>
+                    <div id = "status"></div>
+                    <div>Time left = <span id="timer"></span></div>
+            </h4>
+
+        </div>
+            
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://media.giphy.com/media/f8c3hKmua00KvTZQCd/giphy.gif" class="float-left img-fluid sticky" id ="image1" alt="Scorpion" width = "700" height = "500">
+            </div>    
+            <div class="col-sm-4">
+                <div class = "card">
+                    <div class = "row">
+                        <h3 class ="questions">
+                            Question 1: How many Mortal Kombat Games are out there?
+                        </h3>
+                    </div>
+                    <button class = "button button-correct" id="button-1" value="0">21</button>
+                    <button class = "button button-incorrect" id="button-2" value="0">30</button>
+                    <button class = "button button-incorrect" id="button-3" value="0">12</button>
+                    <button class = "button button-incorrect" id="button-4" value="0">19</button>
+                    <br>
+                    <br>
+                    <div class = "row">
+                        <h3 class ="questions">
+                            Question 2: Who is the creator of Mario?
+                        </h3>
+                    </div>
+                    <div class = "row">
+                        
+                        <button class = "button button-incorrect" id="button-5" value="0">Goichi Suda</button>
+                        <button class = "button button-correct" id="button-6" value="0">Shigeru Miyamoto</button>
+                        <button class = "button button-incorrect" id="button-7" value="0">Tomonobu Itagaki</button>
+                        <button class = "button button-incorrect" id="button-8" value="0">Shinji Mikami</button>
+                        
+                    </div>
+                    <br>
+                    <br>
+                    <div class = "row">
+                            <h3 class ="questions">
+                                Question 3: What is the Answer to the Universe?
+                            </h3>
+                        </div>
+                        <div class = "row">
+                            
+                            <button class = "button button-incorrect" id="button-9" value="0">God</button>
+                            <button class = "button button-incorrect" id="button-10" value="0">Eternal Salvation</button>
+                            <button class = "button button-correct" id="button-11" value="0">42</button>
+                            <button class = "button button-incorrect" id="button-12" value="0">Everything yet nothing</button>
+                            
+                        </div>
+                        <br>
+                        <br>
+                        <div class = "row">
+                                <h3 class ="questions">
+                                    Question 4: Who created the fallout and Elder Scrolls Franchise?
+                                </h3>
+                            </div>
+                            <div class = "row">
+                                
+                                <button class = "button button-correct" id="button-13" value="0">Bethesda Studios</button>
+                                <button class = "button button-incorrect" id="button-14" value="0">Ubisoft</button>
+                                <button class = "button button-incorrect" id="button-15" value="0">SEGA</button>
+                                <button class = "button button-incorrect" id="button-16" value="0">CAPCOM</button>
+                                
+                            </div>
+                            <br>
+                            <br>
+                            <div class = "row">
+                                    <h3 class ="questions">
+                                        Question 5: What game belongs to Lionhead Studios?
+                                    </h3>
+                                </div>
+                                <div class = "row">
+                                    
+                                    <button class = "button button-incorrect" id="button-17" value="0">Dungeons & Dragons</button>
+                                    <button class = "button button-incorrect" id="button-18" value="0">Mass Effect</button>
+                                    <button class = "button button-correct" id="button-19" value="0">Black and White 2</button>
+                                    <button class = "button button-incorrect" id="button-20" value="0">Medieval Total War</button>
+                                    
+                                </div>
+                                <br>
+                                <br>
+                                <div class = "row">
+                                        <h3 class ="questions">
+                                            Question 6: What game won "Game of the Year" in 2018?
+                                        </h3>
+                                    </div>
+                                    <div class = "row">
+                                        
+                                        <button class = "button button-incorrect" id="button-21" value="0">Spider-Man</button>
+                                        <button class = "button button-incorrect" id="button-22" value="0">Red Dead Redemption 2</button>
+                                        <button class = "button button-correct" id="button-23" value="0">God Of War</button>
+                                        <button class = "button button-incorrect" id="button-24" value="0">FortNite</button>
+                                        
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class = "row">
+                                            <h3 class ="questions">
+                                                Question 7: Why do Scorpion and Sub-Zero hate each other?
+                                            </h3>
+                                        </div>
+                                        
+                                            
+                                            <button class = "button button-incorrect" id="button-5" value="0">Sub-Zero slept with Scorpions girlfriend</button>
+                                            <button class = "button button-incorrect" id="button-6" value="0">They are actually secret lovers</button>
+                                            <button class = "button button-incorrect" id="button-7" value="0">Scorpion killed Sub-Zero's dog</button>
+                                            <button class = "button button-correct" id="button-8" value="0">Sub-Zero killed everyone who was close to Scorpion and later killing him.</button>
+                                            <button class = "button button-correct" id="button-8" value="0">Scorpion came back as a spectre and killed Sub-Zero and his clan.</button>
+                                            
+                                       
+                                        <br>
+                                        <br>
+                                        <div class = "row">
+                                            <h3 class ="questions">
+                                                Question 8: How many champions are their in League of Legends?
+                                            </h3>
+                                        </div>
+                                        <div class = "row">
+                                            
+                                            <button class = "button button-incorrect" id="button-5" value="0">100</button>
+                                            <button class = "button button-correct" id="button-6" value="0">144</button>
+                                            <button class = "button button-incorrect" id="button-7" value="0">97</button>
+                                            <button class = "button button-incorrect" id="button-8" value="0">169</button>
+                                            <button class = "button button-incorrect" id="button-8" value="0">45</button>
+                                            
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class = "row">
+                                            <h3 class ="questions">
+                                                Question 9: What year did the first video game come out?
+                                            </h3>
+                                        </div>
+                                        <div class = "row">
+                                            
+                                            <button class = "button button-incorrect" id="button-5" value="0">1965</button>
+                                            <button class = "button button-incorrect" id="button-6" value="0">1975</button>
+                                            <button class = "button button-incorrect" id="button-7" value="0">1973</button>
+                                            <button class = "button button-incorrect" id="button-8" value="0">1969</button>
+                                            <button class = "button button-correct"id="button-8" value="0">1971</button>
+                                            
+                                        </div>
+                                        <br>
+                                        <br>  
+                                        <div class = "row">
+                                            <h3 class ="questions">
+                                                Question 10: Which video game character said  “Wakka wakka wakka.”
+                                            </h3>
+                                        </div>
+                                        <div class = "row">
+                                            
+                                            <button class = "button button-incorrect" id="button-5" value="0">Marcus Pheonix</button>
+                                            <button class = "button button-incorrect" id="button-6" value="0">Snake</button>
+                                            <button class = "button button-correct" id="button-7" value="0">Pac-Man</button>
+                                            <button class = "button button-incorrect" id="button-8" value="0">Issac Clarke</button>
+                                            <button class = "button button-incorrect"id="button-8" value="0">Diablo</button>
+                                            
+                                        </div>
+                                        <br>
+                                        <br>                                        
+                </div>
+            </div>
+               
+            <div class="col-sm">   
+                <img src="https://media.giphy.com/media/KeKKaZduCbJo1vIBsa/source.gif" class="float-right img-fluid sticky" id = "image2" alt="Scorpion" width = "700" height = "500">
+            </div>    
+            
+        
+        
+
+
+
+
+
+
+</body>
+</html>
